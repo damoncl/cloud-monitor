@@ -4,12 +4,12 @@ eureka:
       defaultZone: http://peer1:10001/eureka,http://peer2:10002/eureka,http://peer3:10003/eureka
 spring:
   application:
-    name: cloud-monitor
+    name: monitor-server
   cloud:
     config:
       discovery:
         enabled: true
-        service-id: cloud-config
+        service-id: config-server
       profile: dev
       label: master
       fail-fast: true
